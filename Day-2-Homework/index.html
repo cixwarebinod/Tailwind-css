@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 </head>
 <body>
-    <div class="container bg-blue-900 text-white flex px-10 py-3">
-        <div class="text-2xl w-56"><img src="images/moon.png" class="inline-block">Libre</div>
-        <div class="flex-1"><input type="text" value="search" class="bg-blue-700 w-full h-8 px-8 rounded" id="search"></div>
-        <div class="text-2xl w-64 text-right">Codrops</div>
+    <div class="container fixed bg-blue-900 text-white flex px-10 py-3">
+        <div class="text-2xl w-56"><i class="far fa-moon text-2xl"></i>Libre</div>
+        <div class="flex-1 relative align-center">
+            <i class="fas fa-search absolute mt-2 ml-4"></i>
+            <input type="text" value="search" class="bg-blue-700 shadow-LG w-full h-8 px-12 rounded">
+        </div>
+        <div class="text-2xl w-64 pr-20 text-right">Codrops</div>
     </div>
-    <div class="container flex bg-gray-300 px-10">
-        <div class="flex-1 fixed py-3 w-64 ">
-            <ul class="leading-loose">
-                <li><a href="#"> Home</a></li>
-                <li><a href="#"> Categories</a>
-                    <ul class="px-4 text-gray-700">
+    <div class="container flex bg-gray-300 ">
+        <div class="flex-1 fixed my-16 pl-10 w-48 bg-gray-300 h-full">
+            <ul class="leading-loose z-0 md:inline">
+                <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-tags"></i>Categories</a>
+                    <ul class="px-10 text-gray-700">
                         <li><a href="#"> Fiction</a></li>
                         <li><a href="#"> Nonfiction</a></li>
                         <li><a href="#"> Lifestyle</a></li>
@@ -26,14 +30,14 @@
                         <li><a href="#"> Music</a></li>
                     </ul>
                 </li>
-                <li><a href="#"> Wishlist</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> Wishlist</a></li>
             </ul>
         </div>
-        <div class="flex-1 ml-48 p-3">
+        <div class="container flex-1 ml-48 p-8 py-20 md:flex-col bg-gray-200">
             <div class="p-4 mb-6">
                 <h1 class="text-3xl">Art & Design</h1>
                 <span class="text-gray-700">Interesting stats</span>
-                <div class="text-right inline float-right"><input type="button" value="Add New Book" class="px-6 py-1 mb-6 bg-blue-900 rounded-full text-white"></div>
+                <div class="text-right inline float-right"><input type="button" value="Add New Book" class="px-8 py-2 mb-6 bg-blue-900 rounded-full text-white"></div>
             </div>
             <div class="bg-gray-100 p-8 w-full leading-loose shadow-lg rounded">
                 <h1 class=""> <b>Your favorite authors in this category</b></h1>
@@ -75,21 +79,21 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="flex p-4 font-bold text-gray-700">
-                    <div class="flex-1">Books</div>
+            <div class="border-b-2 border-gray-600 px-2">
+                <div class="flex pt-4 font-bold text-gray-700">
+                    <div class="flex-1 text-2xl">Books</div>
                     <div class="w-32">Library(31)</div>
-                    <div class="underline w-32">Picks For You</div>
+                    <div class="border-b-4 border-blue-900 w-32">Picks For You</div>
                 </div>
             </div>
-            <div class="flex flex-col shadow-lg">
+            <div class="flex flex-col mt-6 shadow-lg">
                 <div class="flex flex-row">
                     <div class="flex p-4 bg-yellow-300">
                         <div><img src="images/movie.jpg" alt="" class="w-32 p-2"></div>
                         <div class="p-4">
                             <h2><b>Popeye Jul 2018</b></h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, pariatur.</p>
-                            <input type="button" Value="Add to Wishlist" class="bg-gray-100 p-1 px-2 mt-3 rounded-full shadow-lg">
+                            <input type="button" Value="Add to Wishlist" class="bg-gray-100 p-2 px-4 mt-4 rounded-full shadow-lg text-yellow-900">
                         </div>
                     </div>
                     <div class="flex p-4 bg-pink-300">
@@ -97,7 +101,7 @@
                         <div class="p-4">
                             <h2><b>Popeye Jul 2018</b></h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, pariatur.</p>
-                            <input type="button" Value="Add to Wishlist" class="bg-gray-100 p-1 px-2 mt-3 rounded-full shadow-lg">
+                            <input type="button" Value="Add to Wishlist" class="bg-gray-100 p-2 px-4 mt-4 rounded-full shadow-lg text-pink-900">
                         </div>
                     </div>
                 </div>
@@ -107,7 +111,7 @@
                         <div class="p-4">
                             <h2><b>Popeye Jul 2018</b></h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, pariatur.</p>
-                            <input type="button" Value="Add to Wishlist" class="bg-gray-100 p-1 px-2 mt-3 rounded-full shadow-lg">
+                            <input type="button" Value="Add to Wishlist" class="bg-gray-100 p-2 px-4 mt-4 rounded-full shadow-lg text-blue-900 hover:bg-red-400">
                         </div>
                     </div>
                     <div class="flex p-4 bg-gray-500">
@@ -115,35 +119,32 @@
                         <div class="p-4">
                             <h2><b>Popeye Jul 2018</b></h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, pariatur.</p>
-                            <input type="button" Value="Add to Wishlist" class="bg-gray-100 p-1 px-2 mt-3 rounded-full shadow-lg">
+                            <input type="button" Value="Add to Wishlist" class="bg-gray-100 p-2 px-4 mt-4 rounded-full shadow-lg text-gray-900 hover:gray-500">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="w-40 pl-3 pt-10 leading-loose">
-            <div>
-                <div>
-                    <img src="logo.jpg" alt="">
-                </div>
-                <div>
-                    <h1><b>Amie Chen</b></h1>
-                    <p>Joined since 2017</p>
+        <div class="w-56 pl-3 pt-10 leading-loose">
+            <div class="pt-16">
+                <div>  
+                    <h1><img src="images/logo.png" alt="" class="inline"><b>Amie Chen</b></h1>
+                    <!-- <p class="">Joined since 2017</p> -->
                 </div>
             </div>
             <div>
                 <div class="text-blue-800 leading-normal"><h1>You've read <b>4 of 30 books</b>in 2018</h1></div>
                 <div class="flex">
-                    <img src="images/books.jpg" alt="" class="w-10 p-1">
-                    <img src="images/book.jpg" alt="" class="w-10 p-1">
-                    <img src="images/books.jpg" alt="" class="w-10 p-1">
-                    <img src="images/book.jpg" alt="" class="w-10 p-1">
+                    <img src="images/books.jpg" alt="" class="w-12 p-1">
+                    <img src="images/book.jpg" alt="" class="w-12 p-1">
+                    <img src="images/books.jpg" alt="" class="w-12 p-1">
+                    <img src="images/book.jpg" alt="" class="w-12 p-1">
                 </div>
             </div>
             <div>
                 <h1 class="text-blue-800">Currently Reading</h1>
                 <div class="leading-normal">
-                    <img src="images/book.jpg" alt="" class="w-10 p-1">
+                    <img src="images/book.jpg" alt="" class="w-12 p-1">
                     <p>Popular lies About Graphic Design</p>
                     <p class="text-blue-800">15/250 pages</p>
                 </div>
